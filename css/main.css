@@ -318,16 +318,13 @@ footer .questions ul li {
     transition: 0.3s;
     border-left: 20px solid transparent;
 }
-footer .questions ul li:hover {
+footer .questions ul a li:hover {
     margin-left: 5px;
     width: 390px;
 }
 footer .questions ul span {
     margin: 10px;
     font-size: 22px;
-}
-footer .questions ul span:hover {
-    margin-left: 0;
 }
 footer .questions ul li i {
     margin: 5px;

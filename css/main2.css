@@ -132,6 +132,11 @@ section.second .product td img {
     padding: 10px;
     background-color: #fff;
     margin: 0 15px 0 0 ;
+    box-shadow: 0 0 5px #dadada;
+    
+}
+section.second .product td a img:hover {
+    box-shadow: 0 0 5px #4c4c4c;
 }
 section.second .product td.bimg img{
     padding: 15px 35px;
@@ -201,6 +206,23 @@ section.second .product_about p i {
 section.second .button_box {
     display: flex;
     gap: 15px;
+    position: relative;
+}
+section.second .button_box .fhbox {
+    width: 0;
+    height: 100%;
+    position: absolute;
+    background: #E56700;
+    top: 0;
+    left: 0;
+    transition: 0.3s;
+}
+section.second .button_box b {
+    position: relative;
+    z-index: 3;
+}
+section.second .button_box :hover .fhbox {
+    width: 100%;
 }
 section.second .button_box .orange {
     background-color: #FE7300;
@@ -209,11 +231,8 @@ section.second .button_box .orange {
     color: #fff;
     padding: 10px 30px;
     border-radius: 10px;
-}
-section.second .button_box .orange:hover {
-    color: #FE7300;
-    background-color: #fff;
-    border: 1px solid #FE7300
+    overflow: hidden;
+    position: relative;
 }
 section.second .button_box .white {
     font-size: 20px;
@@ -349,14 +368,15 @@ footer .questions ul li {
     transition: 0.3s;
     border-left: 20px solid transparent;
 }
-/* footer .questions ul li:hover {
+footer .questions ul a li:hover {
     margin-left: 5px;
-} */
+    width: 390px;
+}
 footer .questions span {
     margin: 10px;
     font-size: 22px;
 }
-footer .questions ul li i {
+footer .questions ul a li i {
     margin: 5px;
 }
 footer .line {
