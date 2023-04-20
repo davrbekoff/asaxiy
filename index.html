@@ -578,7 +578,6 @@
           Created by TECHVAN Group | 2023
         </div>
         </footer>
-
     </div>
 
 
@@ -587,12 +586,16 @@
         const swiper = new Swiper('.swiper', {
   // Optional parameters
     loop: true,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
 
   // If we need pagination
   pagination: {
     el: '.swiper-pagination',
   },
-
+  
   // Navigation arrows
   navigation: {
     nextEl: '.swiper-button-next',
@@ -605,22 +608,5 @@
   },
 });
     </script>
-
-  <!-- Initialize Swiper -->
-  <script>
-    var swiper2 = new Swiper2(".mySwiper2", {
-      effect: "cube",
-      grabCursor: true,
-      cubeEffect: {
-        shadow: true,
-        slideShadows: true,
-        shadowOffset: 20,
-        shadowScale: 0.94,
-      },
-      pagination: {
-        el: ".swiper-pagination2",
-      },
-    });
-  </script>
 </body>
 </html>
