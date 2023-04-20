@@ -59,6 +59,7 @@ header form button {
     background: #008DFF;
     color: #fff;
     border: 2px solid #008DFF;
+    cursor: pointer;
 }
 header ul.header_menu{
     display: flex;
